@@ -1,0 +1,33 @@
+/* Ad Sidebar
+------------------------------------------------------------ */
+.after-content-ad {
+	clear: both;
+	margin: 20px auto;
+	width: 100%;
+	max-width: 728px;
+}
+
+/* Ad Sidebar
+------------------------------------------------------------ */
+.before-header-ad {
+	clear: both;
+	margin: 20px auto;
+	max-width: 728px;
+	width: 100%;
+}
+
+/* Before Posts
+------------------------------------------------------------ */
+.before-posts-sidebar {
+	background: #dddddd;
+	padding: 10px;
+}
+
+/* After Post Box
+------------------------------------------------------------ */
+.after-post-box {
+	clear: both;
+	margin: 10px;
+	border: 1px dotted #777777;
+	padding: 10px;
+}
