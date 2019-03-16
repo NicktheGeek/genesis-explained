@@ -48,7 +48,7 @@ class Genesis_Boilerplate_Boxes extends Genesis_Admin_Boxes {
 				'general_post'      => 1,
 				'advanced_checkbox' => 0,
 				// If you define default text internationalize it.
-				'advanced_text'     => __( 'Default Text', 'genesis-boilerplate' ),
+				'advanced_text'     => __( 'Default Text', 'genesis-explained' ),
 			)
 		);
 
@@ -57,8 +57,8 @@ class Genesis_Boilerplate_Boxes extends Genesis_Admin_Boxes {
 			'submenu' => array(
 				/** Do not use without 'main_menu' */
 				'parent_slug' => 'genesis', // Loads under "genesis" menu.
-				'page_title'  => __( 'Genesis Boilerplate Settings', 'genesis-boilerplate' ), // Shows on page.
-				'menu_title'  => __( 'Boilerplate', 'genesis-boilerplate' ), // Shows in the menu.
+				'page_title'  => __( 'Genesis Boilerplate Settings', 'genesis-explained' ), // Shows on page.
+				'menu_title'  => __( 'Boilerplate', 'genesis-explained' ), // Shows in the menu.
 			),
 		);
 
@@ -187,14 +187,14 @@ class Genesis_Boilerplate_Boxes extends Genesis_Admin_Boxes {
 		 */
 		add_meta_box(
 			'genesis_boilerplate_general_settings',
-			__( 'General', 'genesis-boilerplate' ),
+			__( 'General', 'genesis-explained' ),
 			array( $this, 'general' ),
 			$this->pagehook,
 			'main'
 		);
 		add_meta_box(
 			'genesis_boilerplate_advanced_settings',
-			__( 'Advanced', 'genesis-boilerplate' ),
+			__( 'Advanced', 'genesis-explained' ),
 			array( $this, 'advanced' ),
 			$this->pagehook,
 			'main'
@@ -224,10 +224,10 @@ class Genesis_Boilerplate_Boxes extends Genesis_Admin_Boxes {
 
 				// I created a method for building a select field. It is clean and easy to use. Feel free to steal and adapt it.
 				$this->select_field(
-					$id . '_size', __( 'Size', 'genesis-boilerplate' ), array(
-						'small'  => __( 'Small', 'genesis-boilerplate' ),
-						'medium' => __( 'Medium', 'genesis-boilerplate' ),
-						'tall'   => __( 'Box', 'genesis-boilerplate' ),
+					$id . '_size', __( 'Size', 'genesis-explained' ), array(
+						'small'  => __( 'Small', 'genesis-explained' ),
+						'medium' => __( 'Medium', 'genesis-explained' ),
+						'tall'   => __( 'Box', 'genesis-explained' ),
 					)
 				);
 
@@ -253,7 +253,7 @@ class Genesis_Boilerplate_Boxes extends Genesis_Admin_Boxes {
 		$id = 'advanced';
 
 		// This method builds a checkbox.
-		$this->checkbox( $id . '_checkbox', __( 'Enable This Option?', 'genesis-boilerplate' ) );
+		$this->checkbox( $id . '_checkbox', __( 'Enable This Option?', 'genesis-explained' ) );
 
 		// Here is an example of adding a text field directly to the screen without a method.
 		?>
@@ -261,7 +261,7 @@ class Genesis_Boilerplate_Boxes extends Genesis_Admin_Boxes {
 			<label
 				for="<?php echo esc_attr( $this->get_field_id( $id . '_text' ) ); ?>"
 			>
-				<?php esc_html_e( 'Enter text here:', 'genesis-boilerplate' ); ?>
+				<?php esc_html_e( 'Enter text here:', 'genesis-explained' ); ?>
 			</label>
 			<input
 				type="text"
@@ -274,7 +274,7 @@ class Genesis_Boilerplate_Boxes extends Genesis_Admin_Boxes {
 		<?php
 
 		// An alternate solution to the above would be a text_field() method.
-		$this->text_field( $id . '_text', __( 'Enter text here:', 'genesis-boilerplate' ) );
+		$this->text_field( $id . '_text', __( 'Enter text here:', 'genesis-explained' ) );
 	}
 
 	/**
@@ -286,11 +286,11 @@ class Genesis_Boilerplate_Boxes extends Genesis_Admin_Boxes {
 	 */
 	public function position( $id ) {
 		$this->select_field(
-			$id . '_position', __( 'Display Position', 'genesis-boilerplate' ), array(
-				'off'            => __( 'Select display position to enable.', 'genesis-boilerplate' ),
-				'before_content' => __( 'Before the Content', 'genesis-boilerplate' ),
-				'after_content'  => __( 'After the Content', 'genesis-boilerplate' ),
-				'both'           => __( 'Before and After the Content', 'genesis-boilerplate' ),
+			$id . '_position', __( 'Display Position', 'genesis-explained' ), array(
+				'off'            => __( 'Select display position to enable.', 'genesis-explained' ),
+				'before_content' => __( 'Before the Content', 'genesis-explained' ),
+				'after_content'  => __( 'After the Content', 'genesis-explained' ),
+				'both'           => __( 'Before and After the Content', 'genesis-explained' ),
 			)
 		);
 	}
@@ -369,7 +369,7 @@ class Genesis_Boilerplate_Boxes extends Genesis_Admin_Boxes {
 
 		printf(
 			'<tr valign="top"><th scope="row">%s</th>',
-			esc_html__( 'Enable on:', 'genesis-boilerplate' )
+			esc_html__( 'Enable on:', 'genesis-explained' )
 		);
 
 		echo '<td>';
@@ -380,7 +380,7 @@ class Genesis_Boilerplate_Boxes extends Genesis_Admin_Boxes {
 
 		$this->checkbox(
 			$id . '_show_archive',
-			__( 'Show on Archive Pages', 'genesis-boilerplate' )
+			__( 'Show on Archive Pages', 'genesis-explained' )
 		);
 
 		echo '</td></tr>';

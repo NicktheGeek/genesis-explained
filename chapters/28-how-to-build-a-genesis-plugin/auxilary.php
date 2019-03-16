@@ -72,7 +72,7 @@ add_action( 'genesis_init', 'genesis_boilerplate_init', 99 );
 function genesis_boilerplate_init() {
 
 	/** Load textdomain for translation */
-	load_plugin_textdomain( 'genesis-boilerplate', false, basename( dirname( __FILE__ ) ) . '/languages/' );
+	load_plugin_textdomain( 'genesis-explained', false, basename( dirname( __FILE__ ) ) . '/languages/' );
 
 	/**
 	 * Checks to see if this is an admin screen and
