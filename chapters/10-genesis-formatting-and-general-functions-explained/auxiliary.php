@@ -24,3 +24,5 @@ $args = array(
 if ( genesis_detect_plugin( $args ) ) {
 	echo 'Akismet is active!';
 }
+
+add_theme_support( 'genesis-accessibility', genesis_get_config( 'a11y' ) );
