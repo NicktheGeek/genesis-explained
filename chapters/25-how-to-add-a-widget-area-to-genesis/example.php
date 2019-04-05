@@ -27,7 +27,7 @@ function genesis_explained_after_content_ad_sidebar() {
 	$id = 'after-content-ad';
 
 	$before_markup_args = array(
-		'open'    => '<aside class="widget-area info-onder-content">',
+		'open'    => '<aside class="widget-area after-content-ad">',
 		'context' => 'widget-area-wrap',
 		'echo'    => false,
 		'params'  => array(
@@ -59,7 +59,7 @@ function genesis_explained_before_header_ad_widget_area() {
 	$id = 'before-header-ad';
 
 	$before_markup_args = array(
-		'open'    => '<aside class="widget-area">',
+		'open'    => '<aside class="widget-area before-header-ad">',
 		'context' => 'widget-area-wrap',
 		'echo'    => false,
 		'params'  => array(
